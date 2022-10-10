@@ -1,99 +1,99 @@
 export const COLUMNS = [
   {
-    Header: 'Id',
-    Footer: 'Id',
-    accessor: 'id',
+    Header: "Id",
+    Footer: "Id",
+    accessor: "id",
     disableFilters: true,
-    sticky: 'left'
+    sticky: "left",
   },
   {
-    Header: 'First Name',
-    Footer: 'First Name',
-    accessor: 'first_name',
-    sticky: 'left'
+    Header: "First Name",
+    Footer: "First Name",
+    accessor: "first_name",
+    sticky: "left",
   },
   {
-    Header: 'Last Name',
-    Footer: 'Last Name',
-    accessor: 'last_name',
-    sticky: 'left'
+    Header: "Last Name",
+    Footer: "Last Name",
+    accessor: "last_name",
+    sticky: "left",
   },
   {
-    Header: 'Date of Birth',
-    Footer: 'Date of Birth',
-    accessor: 'date_of_birth',
+    Header: "Date of Birth",
+    Footer: "Date of Birth",
+    accessor: "date_of_birth",
     Cell: ({ row }) => {
       return (
         <div>
-            <span>{row.value}</span><br/>
-            <span>{row.value}</span>
+          <span>{row.date_of_birth}</span>
+          <br />
         </div>
-      )
-    }
+      );
+    },
   },
   {
-    Header: 'Country',
-    Footer: 'Country',
-    accessor: 'country'
+    Header: "Country",
+    Footer: "Country",
+    accessor: "country",
   },
   {
-    Header: 'Phone',
-    Footer: 'Phone',
-    accessor: 'phone'
+    Header: "Phone",
+    Footer: "Phone",
+    accessor: "phone",
   },
   {
-    Header: 'Email',
-    Footer: 'Email',
-    accessor: 'email'
+    Header: "Email",
+    Footer: "Email",
+    accessor: "email",
   },
   {
-    Header: 'Age',
-    Footer: 'Age',
-    accessor: 'age'
+    Header: "Age",
+    Footer: "Age",
+    accessor: "age",
   },
-]
+];
 
 export const GROUPED_COLUMNS = [
   {
-    Header: 'Id',
-    Footer: 'Id',
-    accessor: 'id'
+    Header: "Id",
+    Footer: "Id",
+    accessor: "id",
   },
   {
-    Header: 'Name',
-    Footer: 'Name',
+    Header: "Name",
+    Footer: "Name",
     columns: [
       {
-        Header: 'First Name',
-        Footer: 'First Name',
-        accessor: 'first_name'
+        Header: "First Name",
+        Footer: "First Name",
+        accessor: "first_name",
       },
       {
-        Header: 'Last Name',
-        Footer: 'Last Name',
-        accessor: 'last_name'
-      }
-    ]
+        Header: "Last Name",
+        Footer: "Last Name",
+        accessor: "last_name",
+      },
+    ],
   },
   {
-    Header: 'Info',
-    Footer: 'Info',
+    Header: "Info",
+    Footer: "Info",
     columns: [
       {
-        Header: 'Date of Birth',
-        Footer: 'Date of Birth',
-        accessor: 'date_of_birth'
+        Header: "Date of Birth",
+        Footer: "Date of Birth",
+        accessor: "date_of_birth",
       },
       {
-        Header: 'Country',
-        Footer: 'Country',
-        accessor: 'country'
+        Header: "Country",
+        Footer: "Country",
+        accessor: "country",
       },
       {
-        Header: 'Phone',
-        Footer: 'Phone',
-        accessor: 'phone'
-      }
-    ]
-  }
-]
+        Header: "Phone",
+        Footer: "Phone",
+        accessor: "phone",
+      },
+    ],
+  },
+];
